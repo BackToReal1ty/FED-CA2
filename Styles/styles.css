@@ -6,31 +6,3 @@ a {
 }
 
 /* Top navigation */
-
-section#navBar {
-    background-color: rgba(0, 0, 0, 30%);
-    padding: 1.4rem 0;
-    position: sticky;
-}
-
-section#navBar::after {
-    content: " ";
-    display: table;
-    clear: both;
-}
-
-section#navBar li {
-    display: inline-block;
-    margin: 0, 1rem;
-}
-
-section#navBar nav {
-    float: right;
-}
-
-/* Top left section */
-
-section#topLeft {
-    background-color: #609AEA;
-    width: 36%
-}
