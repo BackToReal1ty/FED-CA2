@@ -6,3 +6,37 @@ a {
 }
 
 /* Top navigation */
+
+div#rightsection {
+    background-color: peachpuff;
+    height: 100vh;
+}
+
+div#leftsection {
+    background-color: powderblue;
+    height: 70vh;
+}
+
+div#announcements {
+    background-color: purple;
+    height: 30vh;
+}
+
+div#top {
+    height: 100vh;
+    width: 100%;
+}
+
+div.jumbotron {
+    padding: 0;
+}
+
+nav.bg-custom {
+    background-color: rgba(200, 200, 200, 30%);
+}
+
+div#whyus p {
+    display: inline-block;
+    width: 60%;
+}
+    
