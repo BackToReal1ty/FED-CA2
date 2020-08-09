@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* Rules for smaller devices */
+@media (max-width: 768px) {
+    div#feeslocation h1 {
+        text-align: center ;
+    }
+    div#feeslocation p {
+        text-align: center;
+    }
+}
+
+/* Top Section */
+
+div#top {
+    background-image: url(../Images/Hero\ 1\ Optimized.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    height: 60vh;
+}
+
+div#top div#title {
+    background-color: rgba(52, 61, 70, 70%);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0.7rem;
+    text-shadow: -3px 3px 4px black;
+    padding: 3rem 7rem;
+}
+
+div#top h1 {
+    font-family: olegos, Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+div#top p {
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+
+div#title hr {
+    background-color: white;
+}
+
+/* Main Content */
+
+div#classes {
+    padding: 4rem 0;
+}
+
+div#classes div#description {
+    border: 1.5px solid black;
+    border-radius: 20px;
+    padding-top: 2rem;
+    background-color: rgba(52, 61, 70, 10%);
+}
+
+div#classes div#leftcol {
+    padding-right: 0.2rem;
+}
+
+div#classes div#rightcol {
+    padding-left: 0.2rem;
+}
+
+div#classes div.even {
+    background-color: rgba(216, 235, 246, 100%);
+    height: 9rem;
+}
+
+div#classes div.even:hover {
+    background-color: rgba(220, 220, 220, 40%);
+    transition: all 0.3s ease-in-out;
+}
+
+div#classes div.odd {
+    background-color: rgba(220, 220, 220, 40%);
+    height: 9rem;
+}
+
+div#classes div.odd:hover {
+    background-color: rgba(216, 235, 246, 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fees and Location */
+
+div#feeslocation div#description p {
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+
+div#feeslocation {
+    padding: 5rem 0;
+}
+
+/* Get Started */
+
+div#getstarted h1 {
+    text-align: center;
+}
+
+div#getstarted a.btn {
+    margin: 1rem;
+}

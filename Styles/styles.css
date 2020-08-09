@@ -1,42 +1,80 @@
 @charset "utf-8";
+
+/*rules for smaller devices */
+@media only screen and (max-width: 767px) {
+    nav.navbar a:hover {
+        border-bottom: 2px solid transparent !important;
+    }
+    nav.navbar li.active a {
+        border-bottom: 2px solid transparent !important;
+    }
+}
+
 /* Fonts */
 
+/* Barlow by Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap");
+/* Montserrat by Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Noto Sans */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
+/* Moon */
+
+@font-face {
+    font-family: moon;
+    src: url(../Fonts/Moon-Regular.otf) format("opentype");
+}
+
+/* Olegos */
+
+@font-face {
+    font-family: olegos;
+    src: url(../fonts/Olegos.otf) format("opentype");
+}
+
 a {
-    color: #444
+    color: #444;
+    text-decoration: none;
 }
 
-/* Top navigation */
-
-div#rightsection {
-    background-color: peachpuff;
-    height: 100vh;
-}
-
-div#leftsection {
-    background-color: powderblue;
-    height: 70vh;
-}
-
-div#announcements {
-    background-color: purple;
-    height: 30vh;
-}
-
-div#top {
-    height: 100vh;
-    width: 100%;
-}
-
-div.jumbotron {
-    padding: 0;
-}
+/* Navigation */
 
 nav.bg-custom {
-    background-color: rgba(200, 200, 200, 30%);
+    background-image: linear-gradient(rgba(0, 0, 0, 60%), rgba(0, 0, 0, 20%));
 }
 
-div#whyus p {
-    display: inline-block;
-    width: 60%;
+nav.navbar a {
+    margin-right: 30px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
-    
+
+nav.navbar li.active a {
+    border-bottom: 2px solid white;
+}
+
+nav.navbar a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 50%);
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(132, 155, 170, 100%);
+    padding-top: 0.5rem;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+footer li {
+    display: inline;
+    padding: 0 1rem;
+    border-right: solid #a175c4 1px;
+}
+
+footer li:last-child {
+    border: 0px;
+}

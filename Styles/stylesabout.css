@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* Top Section */
+
+div#top {
+    background-image: url(../Images/Hero\ 3\ Optimized.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    height: 60vh;
+}
+
+div#top div#title {
+    background-color: rgba(52, 61, 70, 70%);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0.7rem;
+    text-shadow: -3px 3px 4px black;
+    padding: 3rem 7rem;
+}
+
+div#top h1 {
+    font-family: olegos, Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+div#top p {
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+
+div#title hr {
+    background-color: white;
+}
+
+/* Main Content */
+
+div#maincontent div.row {
+    padding: 3rem 0
+}
+
+div#maincontent p {
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}

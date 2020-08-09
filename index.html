@@ -15,6 +15,7 @@
         />
 
         <link rel="stylesheet" href="./Styles/styles.css" />
+        <link rel="stylesheet" href="./Styles/styleshome.css" />
 
         <!--  Bootstrap Scripts  -->
         <script
@@ -39,7 +40,7 @@
     <body>
         <!--  Navigation  -->
         <div id="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top trn">
                 <a class="navbar-brand" href="#">Insert logo here</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -49,9 +50,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Consult</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./classes.html">Classes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./consult.html">Consult</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -59,26 +60,94 @@
         </div>
 
         <!--  Top Section  -->
-        <div id="top" class="jumbotron">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <div class="row no-gutters">
-                        <div class="col-md-12" id="leftsection">2</div>
-                        <div class="col-md-12" id="announcements">3</div>
+        <div class="conteiner" id="top">
+            <div id="Carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="scrolldown">
+                        <a href="#featured">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="carousel-item active" id="carousel-one">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <h1>Where The</h1>
+                                    <h1>Learning Never Stops.</h1>
+                                    <div id="carousel-description">
+                                        <p>
+                                            Here at Koala, we believe that learning is for everyone. Whether you are a complete
+                                            beginner to AI and Analytics, or you are well-versed in the topic, we believe that we
+                                            can help you. Not only do we have effective classes for all levels, we can also help
+                                            to build full-fledged applications for your company.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-lg active rounded">GET STARTED</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carousel-two">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <h1>Where The</h1>
+                                    <h1>Learning Never Stops.</h1>
+                                    <div id="carousel-description">
+                                        <p>
+                                            Here at Koala, we believe that learning is for everyone. Whether you are a complete
+                                            beginner to AI and Analytics, or you are well-versed in the topic, we believe that we
+                                            can help you. Not only do we have effective classes for all levels, we can also help
+                                            to build full-fledged applications for your company.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-lg active rounded">GET STARTED</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="carousel-three">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <h1>Where The</h1>
+                                    <h1>Learning Never Stops.</h1>
+                                    <div id="carousel-description">
+                                        <p>
+                                            Here at Koala, we believe that learning is for everyone. Whether you are a complete
+                                            beginner to AI and Analytics, or you are well-versed in the topic, we believe that we
+                                            can help you. Not only do we have effective classes for all levels, we can also help
+                                            to build full-fledged applications for your company.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-lg active rounded">GET STARTED</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-8" id="rightsection">1</div>
             </div>
         </div>
 
         <!--  Featured Course  -->
-        <div id="mainContent" class="container">
-            <div class="col-12 text-center">
-                <h1>Introduction to AI</h1>
-                <p>
-                    Learn the fundamentals to AI today with the ultimate crash course to get you started, no experience needed!
-                </p>
-                <a class="btn btn-primary btn-lg" href="#" href="#">Get Started</a>
+        <div id="featured" class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Introduction to AI</h1>
+                    <p>
+                        Learn the fundamentals to AI today with the ultimate crash course to get you started, no experience
+                        needed!
+                    </p>
+                    <a class="btn btn-primary btn-lg" href="./classes.html">Get Started</a>
+                </div>
             </div>
         </div>
 
@@ -87,43 +156,42 @@
             <h2>Why us?</h2>
             <div class="heading-underline"></div>
             <div class="row no-gutters">
-                <div class="col-md-3">
+                <div class="col-md-3 even">
                     <div>
                         <img src="./Images/Schedule Icon.png" alt="Schedule Icon" class="featureicons" />
                         <h5>Flexible Schedule</h5>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rerum autem corporis suscipit sit
-                            consectetur. Doloremque voluptates odio quasi ut?
+                            We have classes taking place every single day, so, if you ever find yourself missing a lesson, we'd be
+                            happy to place you in a class any other day in the week!
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 odd">
                     <div>
                         <img src="./Images/Book Icon.png" alt="Teachers Icon" class="featureicons" />
                         <h5>Dedicated Teachers</h5>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse vitae eum aliquam excepturi, officia et
-                            assumenda necessitatibus nam eligendi exercitationem.
+                            Our teachers are experienced and take a caring, patient approach towards students!
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 even">
                     <div>
                         <img src="./Images/Checklist Icon.png" alt="Syllabus Icon" class="featureicons" />
                         <h5>Comprehensive Syllabus</h5>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus ea repellat sunt recusandae
-                            cumque dicta aliquid quisquam facere soluta!
+                            We belive in results through practice, hence, our syllabus not only covers theory, but also gives you
+                            lots of opportunites for hands-on projects!
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 odd">
                     <div>
                         <img src="./Images/Code Icon.png" alt="Consult Icon" class="featureicons" />
                         <h5>Professional Consultation</h5>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nihil quas error modi dolorem,
-                            cupiditate sapiente voluptas eos soluta ab.
+                            If you need software solutions for your company, our team of experienced industry professionals will
+                            definitely be prompt in helping you!
                         </p>
                     </div>
                 </div>
@@ -131,16 +199,64 @@
         </div>
 
         <!--  Testimonials  -->
-        <div id="testimonials" class="justify-content-center text-center container">
+        <div id="testimonials" class="container">
             <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <img src="./Images/Profile Pic Optimized.jpg" alt="" />
+                    <blockquote>
+                        <p id="testimonialtext">
+                            I previously went for the classes, and I must say that the classes are well paced, and the teachers
+                            are patient and helpful!
+                        </p>
+                        <hr />
+                        <p id="author">
+                            Ali Saad
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <img src="./Images/Profile Pic 2 Optimized.jpg" alt="" />
+                    <blockquote>
+                        <p id="testimonialtext">
+                            I contacted Koala for analytical solutions for my company, and they were very prompt in their service,
+                            and provided high quality worksmanship. We will definitely be consulting them again in the future!
+                        </p>
+                        <hr />
+                        <p id="author">
+                            Kevin Mayer
+                        </p>
+                    </blockquote>
+                </div>
             </div>
         </div>
 
         <!--  Bottom Section  -->
-        <div id="bottom"></div>
+        <div id="bottom" class="container-fluid">
+            <div class="wave"></div>
+            <div id="joinus">
+                <p>Join us for a free trial lesson today!</p>
+                <a href="./classes.html" class="btn btn-primary btn-lg active rounded-pill">GET STARTED</a>
+            </div>
+        </div>
 
-        <!--  Footer  -->
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <ul id="links">
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">PRIVACY POLICY</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5"></div>
+                    <div class="col-md-3">
+                        <p id="address">18 Dempsey Rd, Singapore 249677</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
